@@ -1,0 +1,233 @@
+:root {
+    --primary: #357fdf;
+    --primary-dark: #1a4f91;
+    --background-light: #ddedff;
+    --card-bg: #ffffff;
+    --bs-primary: var(--primary);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-light);
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-orange {
+    color: #f97316 !important;
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0.5rem; 
+}
+
+.wrapper {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.login-card {
+    background-color: var(--card-bg);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: none !important;
+}
+
+.background-light-color {
+    background-color: var(--background-light);
+}
+
+.right-side-separated h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: '"Playfair Display", "Georgia", serif';
+    color: var(--primary-dark);
+}
+
+.right-side-separated h5 {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: '"Lora", "Georgia", serif';
+    color: var(--primary);
+}
+
+.admin-nav {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid #e5e7eb;
+    overflow-x: auto;
+}
+
+.admin-nav .nav-link {
+    color: #6b7280;
+    padding: 1rem 1.5rem;
+    border-bottom: 3px solid transparent;
+    font-weight: 600;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.admin-nav .nav-link:hover,
+.admin-nav .nav-link.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+.admin-nav .nav-link.active {
+    color: var(--primary-dark);
+}
+
+.content-card {
+    background-color: var(--card-bg);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #e5e7eb;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #f9fafb;
+    font-weight: 700;
+}
+
+.schedule-table .time-slot {
+    background-color: #f3f4f6;
+    font-weight: 600;
+    width: 100px;
+}
+
+.schedule-block {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    min-height: 80px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.schedule-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.block-green {
+    background-color: #d1fae5;
+    border: 1px solid #34d399;
+    color: #065f46;
+}
+
+.block-yellow {
+    background-color: #fef3c7;
+    border: 1px solid #fcd34d;
+    color: #92400e;
+}
+
+.block-red {
+    background-color: #fee2e2;
+    border: 1px solid #f87171;
+    color: #991b1b;
+}
+
+.status-pill {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-confirmed {
+    background-color: #10b981;
+    color: white;
+}
+
+.status-pending {
+    background-color: #f59e0b;
+    color: white;
+}
+
+.status-rejected {
+    background-color: #ef4444;
+    color: white;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .grid-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.add-lesson-cell {
+    cursor: pointer !important;
+    border: 2px dashed #0d6efd;
+    opacity: 0.8;
+    position: relative;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.add-lesson-cell:hover {
+    background-color: rgba(13, 110, 253, 0.15);
+}
+
+.add-lesson-wrapper {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-lesson-wrapper.disabled {
+    opacity: 0.6;
+}
+
+.action-btn {
+    width: 200px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#togglePassword:hover {
+    color: var(--primary) !important;
+}
