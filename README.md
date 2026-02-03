@@ -17,7 +17,7 @@ Orario Ottimo is a web application for managing and optimizing academic timetabl
 ### 1. Clone the Repository
 ```
 git clone https://github.com/bigandry17/Orario-Ottimo
-cd orarioOttimo
+cd Orario-Ottimo
 ```
 
 ### 2. Install Backend Dependencies
